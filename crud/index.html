@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD de Aluno</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Cadastro de Alunos</h1>
+    <form id="aluno-form">
+        <input type="text" id="nome" placeholder="Nome" required />
+        <input type="text" id="matricula" placeholder="Matrícula" required />
+        <input type="text" id="curso" placeholder="Curso" required />
+        <input type="email" id="email" placeholder="E-mail" required />
+        <button type="submit">Salvar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Matrícula</th>
+                <th>Curso</th>
+                <th>E-mail</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="aluno-list"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
